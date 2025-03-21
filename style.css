@@ -61,7 +61,7 @@ input,select,textarea,label{
 }
 
 .extendedLabel{
-    height: 10vh;
+    height: 8vh;
 }
 
 label{
@@ -100,7 +100,7 @@ input:focus,select:focus{
 }
 
 .formBody1 > div,.formBody2 >div{
-    height: 23vh;
+    height: 17vh;
    
 }
 
