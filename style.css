@@ -57,7 +57,7 @@ input::-webkit-inner-spin-button {
 
 #mainContainer{
     width: 100%;
-    height: 310vh;
+    height: 286vh;
     background-color: #202020;
     flex-direction: column;
     overflow: hidden;
@@ -174,6 +174,14 @@ input:focus,select:focus{
 
 .textAreaDiv>textarea:focus{
     border: 2px solid #fff;
+}
+
+.wocasDiv{
+    height: 20vh;
+}
+
+.wocasDiv>textarea{
+    height: 12vh;
 }
 
 .btnDiv{
