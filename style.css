@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+#mainContainer{
+    width: 100%;
+    height: 440vh;
+    background-color: #E6E6E6;
+    flex-direction: column;
+}
+
+.mainFormDivCtr{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formDiv{
+    width: 45rem;
+}
+
+#headerDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 26vh;
+    width: 100%;
+}
+
+#headerDiv>div{
+    text-align: center;
+}
+
+.mainform{
+    display: flex;
+}
+
+.formBody1{
+    flex: 50%;
+}
+
+.formBody2{
+    flex: 50%;
+}
+
+
+input,select,textarea,label{
+    display: block;
+}
+
+.extendedLabel{
+    height: 10vh;
+}
+
+label{
+    height: 7vh;
+}
+
+
+#requiredAction{
+    width: 18rem;
+}
+
+#subhead{
+    height: 19vh;
+}
+
+label{
+    font-size: 1.19rem;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+input,select{
+    border: 2px solid #969696;
+    outline: none;
+    background-color: transparent;
+    width: 12rem;
+    font-size: 1.1rem;
+    padding: .3rem;
+    border-radius: 4px;
+    letter-spacing: .1rem;
+    transition: .2s linear;
+}
+
+input:focus,select:focus{
+    border: 2px solid #202020;
+}
+
+.formBody1 > div,.formBody2 >div{
+    height: 23vh;
+   
+}
+
+.wocasDiv,.flmTrbDiv,.addRemarksDiv{
+    height: 60vh;
+}
+
+.wocasDiv>label,.flmTrbDiv>label,.addRemarksDiv>label{
+    height: 6vh;
+}
+
+.wocasDiv>textarea,.flmTrbDiv>textarea,.addRemarksDiv>textarea{
+    outline: none;
+    width: 80%;
+    height: 70%;
+    font-size: 1rem;
+    padding: .8rem 1rem;
+    border: none;
+    resize: none;
+    border-radius: 10px;
+    letter-spacing: .1rem;
+}
+
+.btnDiv{
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnInnerDiv{
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.btnInnerDiv>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnInnerDiv>div>button,input[type="reset"]{
+    width: 12rem;
+    height: 3.2rem;
+    letter-spacing: .3rem;
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: 1px solid #333333 ;
+    border-radius: 5px;
+    transition: .5s linear;
+}
+
+.btnInnerDiv>div>button:hover,input[type="reset"]:hover{
+    border: #E6E6E6;
+    color: #E6E6E6;
+    background-color: #333333;
+}
+
+
+
