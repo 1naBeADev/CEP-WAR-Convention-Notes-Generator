@@ -90,14 +90,11 @@ input::-webkit-inner-spin-button {
     display: flex;
 }
 
-.formBody1{
+.formBody1,.formBody2{
     flex: 50%;
+    display: flex;
+    flex-direction: column;
 }
-
-.formBody2{
-    flex: 50%;
-}
-
 
 input,select,textarea,label{
     display: block;
@@ -141,6 +138,7 @@ input:focus,select:focus{
 
 .formBody1 > div,.formBody2 >div{
     height: 12.5vh;
+    flex: 20%;
    
 }
 
