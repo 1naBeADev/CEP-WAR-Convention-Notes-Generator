@@ -57,7 +57,7 @@ input::-webkit-inner-spin-button {
 
 #mainContainer{
     width: 100%;
-    height: 286vh;
+    height: 250vh;
     background-color: #202020;
     flex-direction: column;
     overflow: hidden;
@@ -117,8 +117,25 @@ label{
 }
 
 #subhead{
-    height: 13vh;
+    display: flex;
+    width: 100%;
+    height: 6vh;
 }
+
+.subHeadClass1 {
+    flex: 50%; 
+    display: flex; 
+    align-items: center; 
+    padding: 0 10px; 
+}
+
+.subHeadClass2 {
+    flex: 60%; 
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
 
 label{
     font-size: 1rem;
@@ -127,19 +144,20 @@ label{
 }
 
 input,select{
-    border: 2px solid #969696;
+    border: 3px solid #969696;
+    background-color: #f1f1f1;
     outline: none;
-    background-color: transparent;
     width: 12rem;
     font-size: .85rem;
     padding: .3rem;
     border-radius: 4px;
     letter-spacing: .1rem;
     transition: .2s linear;
+    color: #202020;
 }
 
 input:focus,select:focus{
-    border: 2px solid #fff;
+    border: 3px solid #fff;
 }
 
 .formBody1 > div,.formBody2 >div{
@@ -149,7 +167,7 @@ input:focus,select:focus{
 }
 
 .textAreaDiv{
-    height: 35vh;
+    height: 20vh;
 }
 
 .textAreaDiv>label{
@@ -159,7 +177,7 @@ input:focus,select:focus{
 .textAreaDiv>textarea{
     outline: none;
     width: 50%;
-    height: 25vh;
+    height: 12vh;
     font-size: .85rem;
     padding: .8rem 1rem;
     border: none;
@@ -167,24 +185,17 @@ input:focus,select:focus{
     border-radius: 10px;
     letter-spacing: .1rem;
     color: #E6E6E6;
-    border: 2px solid #969696;
-    background-color: transparent;
+    border: 3px solid #969696;
+    background-color: #f1f1f1;
     transition: .2s linear;
 }
 
 .textAreaDiv>textarea:focus{
-    border: 2px solid #fff;
-}
-
-.wocasDiv{
-    height: 20vh;
-}
-
-.wocasDiv>textarea{
-    height: 12vh;
+    border: 3px solid #fff;
 }
 
 .btnDiv{
+    margin-top: 2rem;
     height: 10rem;
     width: 100%;
     display: flex;
