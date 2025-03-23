@@ -263,6 +263,7 @@ input:focus,select:focus{
     justify-content: center;
     align-items: center;
     flex: 25%;
+    font-weight: 700;
 }
 
 #adbTitleDiv>p{
