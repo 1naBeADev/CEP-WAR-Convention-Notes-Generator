@@ -58,6 +58,8 @@ siBtn.addEventListener("click", function(event){
 
     let abcatxtBox = document.getElementById("tbdTxtArea");
     abcatxtBox.value = `Contact Person: ${contactPerson}\n` + `Contact Number:${contactNumber}\n` + `Contact Email: ${contactEmail}\n` + `Alternative Contact Person: ${aContactPerson}\n` + `Alternative Contact Number:${aContactNumber}\n` + `Alternative Contact Email Address:${aContactEmail}\n` + `Working Permit Needed:${wPermit}\n` + `Available Date and Time:${avalableDateandTime}\n`;
+
+    navigator.clipboard.writeText(abcatxtBox.value);
 })
 
 let okbtn = document.getElementById("okbtn");
