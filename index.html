@@ -27,17 +27,19 @@
                     <form action="#">
                         
                         <div id="subhead">
-                            <div class="subHeadClass1">
-                                <label for="vendor">Contact Channel - Vendor: </label>
-                            </div>
-                            
-                            <div class="subHeadClass2">
-                                <select name="vendor" id="vendor">
-                                    <option value="Hotline">Hotline - CND</option>
-                                    <option value="Email">Email - CND</option>
-                                    <option value="Sana All">Sana All - CND</option>
-                                    <option value="SocMed">Social Media - CND</option>
-                                </select>
+                            <div>
+                                <div class="subHeadClass1">
+                                    <label for="vendor">Contact Channel - Vendor: </label>
+                                </div>
+                                
+                                <div class="subHeadClass2">
+                                    <select name="vendor" id="vendor">
+                                        <option value="Hotline">Hotline - CND</option>
+                                        <option value="Email">Email - CND</option>
+                                        <option value="Sana All">Sana All - CND</option>
+                                        <option value="SocMed">Social Media - CND</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>                        
 
@@ -45,40 +47,50 @@
                             
                             <div class="formBody1">
                                 <div>
+                                    <label for="ani">ANI</label>
+                                    <input type="number" id="ani" name="ani" required>
+                                </div>
+
+                                <div>
                                     <label for="sfdcCaseNum">SFDC Case Number:</label>
-                                    <input type="number" id="sfdcCaseNum" name="sfdcCaseNum">
+                                    <input type="number" id="sfdcCaseNum" name="sfdcCaseNum" required>
                                 </div>
 
                                 <div>
                                     <label for="contactPerson">Contact Person:</label>
-                                    <input type="contactPerson" id="contactPerson" name="contactPerson">
+                                    <input type="contactPerson" id="contactPerson" name="contactPerson" required>
                                 </div>
 
                                 <div>
                                     <label for="contactNumber">Contact Number:</label>
-                                    <input type="number" id="contactNumber" name="contactNumber">
+                                    <input type="number" id="contactNumber" name="contactNumber" required>
                                 </div>
 
                                 <div>
-                                    <label for="contactEmail" class="extendedLabel" class="extendedLabel">Contact Email <br> Address:</label>
-                                    <input type="email" id="contactEmail" name="contactEmail">    
+                                    <label for="contactEmail" class="extendedLabel" class="extendedLabel">Contact Email</label>
+                                    <input type="email" id="contactEmail" name="contactEmail" required>    
                                 </div>
                                 
                                 <div>
                                     <label for="aContactPerson" class="extendedLabel">ALT. CONTACT PERSON:</label>
-                                    <input type="text" id="aContactPerson" name="aContactPerson">
+                                    <input type="text" id="aContactPerson" name="aContactPerson" required>
                                 </div>    
                             </div>
 
                             <div class="formBody2">
                                 <div>
+                                    <label for="baNum">Billing Account Number</label>
+                                    <input type="number" id="baNum" name="baNum" required>
+                                </div>
+
+                                <div>
                                     <label for="aContactNumber">ALT. CONTACT #:</label>
-                                    <input type="number" id="aContactNumber" name="aContactNumber">
+                                    <input type="number" id="aContactNumber" name="aContactNumber" required>
                                 </div>  
 
                                 <div>
-                                    <label for="aContactEmail" class="extendedLabel">ALT. CONTACT EMAIL:</label>
-                                    <input type="email" id="aContactEmail" name="aContactEmail">
+                                    <label for="aContactEmail">ALT. CONTACT EMAIL:</label>
+                                    <input type="email" id="aContactEmail" name="aContactEmail" required>
                                 </div>
                                 
                                 <div>
@@ -93,15 +105,15 @@
                                 
                                 <div>
                                     <label for="avalableDateandTime">Available Date and Time:</label>
-                                    <input type="text" id="" name="avalableDateandTime">
+                                    <input type="text" id="avalableDateandTime" name="avalableDateandTime" required>
                                 </div>
                                 
                                 <div>
                                     <label for="Concern">Concern:</label>
                                     <select name="concern" id="concern">
-                                        <option value="vd">No Voice and Date</option>
-                                        <option value="nic">No Internet Connection</option>
-                                        <option value="ndt">No Dialtone</option>
+                                        <option value="No Voice and Date">No Voice and Date</option>
+                                        <option value="No Internet Connection">No Internet Connection</option>
+                                        <option value="No Dialtone">No Dialtone</option>
                                     </select>
                                 </div>
                                 
@@ -127,16 +139,16 @@
                                 <div>
                                     <label for="requiredAction">Required Action: </label>
                                     <select name="requiredAction" id="requiredAction">
-                                        <option value="dispatchedIC">Dispatched to Technician for Inside Checking</option>
-                                        <option value="dispatchedOC">Dispatched to Technician for Outside Checking</option>
-                                        <option value="imChecking">For IM Checking</option>
-                                        <option value="fcr">FCR</option>
+                                        <option value="Dispatched to Technician for Inside Checking">Dispatched to Technician for Inside Checking</option>
+                                        <option value="Dispatched to Technician for Outside Checking">Dispatched to Technician for Outside Checking</option>
+                                        <option value="For IM Checking">For IM Checking</option>
+                                        <option value="FCR">FCR</option>
                                     </select>
                                 </div>
                                     
                                 <div>
                                     <label for="onuLS">ONU Light Status:</label>
-                                    <input type="text" id="onuLS" name="onuLS">
+                                    <input type="text" id="onuLS" name="onuLS" required>
                                 </div>
                                 
                                 <div>
@@ -152,8 +164,9 @@
 
                                 <div>
                                     <label for="onuSN">ONU Serial Number:</label>
-                                    <input type="text" id="onuSN" name="onuSN">
+                                    <input type="text" id="onuSN" name="onuSN" required>
                                 </div>
+
 
                             </div>
                         </div>
@@ -179,11 +192,11 @@
                                 </div>
 
                                 <div class="abcaDiv">
-                                    <button>ABCA</button>
+                                    <button id="abcabtn">ABCA</button>
                                 </div>
 
                                 <div class="specialInsDiv">
-                                    <button>SPECIAL INSTRUCTION</button>
+                                    <button id="siBtn">SPECIAL INSTRUCTION</button>
                                 </div>
                             </div>
                         </div>
@@ -195,6 +208,31 @@
         </div>
 
     </div>
+
+    <div class="dbox okDis" id="dbox">
+        <div id="adbTitleDiv">
+            <p id="dboxTitle"></p>
+        </div>
+        <div id="txtBoxDiv">
+            <div>
+                <textarea name="tbdTxtArea" id="tbdTxtArea"></textarea>
+            </div>
+        </div>
+        <div id="okBtnDiv">
+            <button id="okbtn">OK</button>
+        </div>
+    </div>
+
+    <div id="stickyFooter">
+        <div>
+            <p>Enterprise Notes Generator V1</p>
+            <p>Developed and designed by: QA Team</p>
+        </div>
+    </div>
+
+
+
+<script src="script.js"></script>
     
 </body>
 </html>
