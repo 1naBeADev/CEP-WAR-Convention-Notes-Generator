@@ -1,47 +1,3 @@
-/* 
-
-title : CEP WAR NOTES GENERATOR
-create:
-
-E-CARE
-DNIS - ANI/DNIS
-if agent did not call DNIS - N/A
-
-CEP war convention - one line
-
--Concerns, simple concerns, vd bla bla bla ----
-
-small fonts --
-
-Working permit---
-- yes---
-- Not needed---
-- Not Need  - Please Bring ID---
-- For Verification ---
-
-
-smaller text area ----
-
-black bg ---- 
-
-EMAIL:
-SFDC Case No: 
-CEP Case No/Fault Ticket No: 
-Received thru Enterprise Care Mailbox Dated: 
-Customer Account Number: 
-Billing Account Number: 
-Account Name: 
-Service ID: 
-Concern: 
-Action Taken: 
-
-Pag na generate ano seperator
-
-
-*/
-
-
-
 *{
     margin: 0;
     padding: 0;
@@ -59,7 +15,7 @@ input::-webkit-inner-spin-button {
 
 #mainContainer{
     width: 100%;
-    height: 265vh;
+    height: 193vh;
     background-color: #202020;
     flex-direction: column;
     overflow: hidden;
@@ -73,14 +29,13 @@ input::-webkit-inner-spin-button {
 }
 
 #formDiv{
-    width: 33rem;
+    width: 50rem;
 }
 
 #headerDiv{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 8vh;
     width: 100%;
     color: #E6E6E6;
 }
@@ -95,8 +50,18 @@ input::-webkit-inner-spin-button {
 
 .formBody1,.formBody2{
     flex: 50%;
+}
+
+.formBody1>div,.formBody2>div{
     display: flex;
-    flex-direction: column;
+    height: 8.2vh;
+}
+
+.formFlex{
+    flex: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
 input,select,textarea,label{
@@ -108,11 +73,6 @@ select>option{
     color: #202020;
 }
 
-
-label{
-    padding: 0.9rem 0;
-}
-
 #subhead{
     display: flex;
     justify-content: center;
@@ -121,22 +81,31 @@ label{
 
 #subhead>div{
     display: flex;
-    width: 100%;
-    height: 6vh;
+    width: 80%;
+    height: 12vh;
 }
 
 .subHeadClass1{
-    flex: 50%; 
-    display: flex; 
-    align-items: center; 
-    padding: 0 10px; 
+    flex: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
-.subHeadClass2 {
-    flex: 60%; 
+
+.subHeadClass2{
+    flex: 50%;
     display: flex;
+    justify-content: start;
     align-items: center;
-    padding: 0 10px;
+}
+
+.subHeadClass2>select{
+    margin-left: .6rem;
+}
+
+.subHeadClass2>select{
+    width: 14vw;
 }
 
 
@@ -163,24 +132,33 @@ input:focus,select:focus{
     border: 3px solid #fff;
 }
 
-.formBody1 > div,.formBody2 >div{
-    height: 12.5vh;
-    flex: 20%;
-   
-}
-
 .textAreaDiv{
-    height: 20vh;
+    height: 16vh;
+    display: flex;
 }
 
-.textAreaDiv>label{
+.ttdFlex1,.ttdFlex2{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.ttdFlex1{
+    flex: 30%;
+}
+
+.ttdFlex2{
+    flex: 70%;
+}
+
+.ttdFlex1>label{
     padding: 1rem 0;
 }
 
-.textAreaDiv>textarea{
+.ttdFlex2>textarea{
     outline: none;
-    width: 50%;
-    height: 12vh;
+    width: 90%;
+    height: 10vh;
     font-size: .85rem;
     padding: .8rem 1rem;
     border: none;
