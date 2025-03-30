@@ -239,6 +239,16 @@ contactChannel.addEventListener("change",function(){
 let generatebtn = document.getElementById("generate");
 
 generatebtn.addEventListener("click",function(e){
+    let ritm = document.getElementById("ritm").value;
+    let cepCase = document.getElementById("cepCase").value;
+    let sfdcCaseNum = document.getElementById("sfdcCaseNum").value;
+    let receivedthru = document.getElementById("receivedthru").value;
+    let can = document.getElementById("can").value;
+    let billingnum = document.getElementById("billingnum").value;
+    let accName = document.getElementById("accName").value;
+    let serviceID = document.getElementById("serviceID").value;
+    let concernSearch2 = document.getElementById("concernSearch2").value;
+    let actionTaken = document.getElementById("actionTaken").value;
     
     e.preventDefault();
 
@@ -249,7 +259,7 @@ generatebtn.addEventListener("click",function(e){
     dbox.classList.remove("okDis");
 
     let abcatxtBox = document.getElementById("tbdTxtArea");
-    abcatxtBox.value = `SFDC Case Number: ${sfdcCaseNum}\nContact Person: ${contactPerson}`;
+    abcatxtBox.value = `RITM Number: ${ritm}\nCEP Case No: ${cepCase}\nSFDC Case Number: ${sfdcCaseNum}\nReceived thru Sana All Dated: ${receivedthru}\nCustomer Account Number: ${can}\nBilling Account: ${billingnum}\nAccount Name: ${accName}\nService ID: ${serviceID}\nConcern: ${concernSearch2}\nAction Taken: ${actionTaken}`;
 
     navigator.clipboard.writeText(abcatxtBox.value);
 
