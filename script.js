@@ -126,7 +126,7 @@ abcabtn.addEventListener("click",function(event){
     let ani = document.getElementById("ani").value;
     let ba = document.getElementById("baNum").value;
     let concern = document.getElementById("concernSearch").value;
-    let action = document.getElementById("requiredAction").value;
+    let action = document.getElementById("addRemarks").value;
    
     event.preventDefault();
 
