@@ -290,7 +290,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (!isValid) {
                 event.preventDefault(); 
-                alert("⚠ All fields must be filled before submitting."); // Clearer error message
+                alert("All fields must be filled before submitting."); // Clearer error message
                 dbox.classList.add("okDis"); // Hide pop-up if validation fails
             } else {
                 event.preventDefault(); // Prevent actual form submission
