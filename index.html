@@ -34,8 +34,8 @@
                                 
                                 <div class="subHeadClass2">
                                     <select name="vendor" id="contactChannel">
-                                        <option value="Hotline">Hotline - CND</option>
-                                        <option value="Sana All">Sana All - CND</option>
+                                        <option value="Hotline CND">Hotline - CND</option>
+                                        <option value="Sana All CND">Sana All - CND</option>
                                     </select>
                                 </div>
                             </div>
@@ -88,7 +88,7 @@
                                         </div>
                                         <div class="formFlex">
                                             <div class="inputContainer">
-                                                <input type="text" id="concernSearch" class="formInput" placeholder="Concern">
+                                                <input type="text" id="concernSearch" class="formInput" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
                                                 <div id="concernDropdown" class="dropdown-content hideCH">
                                                     <ul id="concernList" class="dropdownList"></ul>
                                                 </div>
@@ -113,7 +113,7 @@
                                             <label for="contactPerson">Contact Person:</label>
                                         </div>
                                         <div class="formFlex">
-                                            <input type="contactPerson" id="contactPerson" name="contactPerson">
+                                            <input type="text" id="contactPerson" name="contactPerson">
                                         </div>
                                     </div>
                                     
@@ -138,6 +138,15 @@
                                         </div>
                                         <div class="formFlex">
                                             <input type="text" id="avalableDateandTime" name="avalableDateandTime">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="serviceID">Service ID:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="serviceID" name="serviceID">
                                         </div>
                                     </div>
                                     
@@ -183,15 +192,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                        
-                                    <div>
-                                        <div class="formFlex">
-                                            <label for="onuLS">ONU Light Status:</label>
-                                        </div>
-                                        <div class="formFlex">
-                                            <input type="text" id="onuLS" name="onuLS">
-                                        </div>
-                                    </div>
+                                    
                                     
                                     <div>
                                         <div class="formFlex">
@@ -218,7 +219,25 @@
                                         </div>
                                     </div>
 
+                                    <div id="istherePT">
+                                        <div class="formFlex">
+                                            <label for="onuSN">PT Number:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="onuSN" name="onuSN">
+                                        </div>
+                                    </div>
 
+
+                                </div>
+                            </div>
+
+                            <div class="textAreaDiv">
+                                <div class="ttdFlex1">
+                                    <label for="onuLS">ONU Light Status:</label>
+                                </div>
+                                <div class="ttdFlex2">
+                                    <textarea name="onuLS" id="onuLS"></textarea>
                                 </div>
                             </div>
 
@@ -236,7 +255,7 @@
                                     <label for="addRemarks">Additional Remarks:</label>
                                 </div>
                                 <div class="ttdFlex2">
-                                    <textarea name="addRemarks" id="addRemarks"></textarea>
+                                    <textarea name="addRemarks" id="addRemarks">CEP Case Number </textarea>
                                 </div>
                             </div>
 
@@ -247,7 +266,7 @@
                                         <input type="reset" value="RESET">
                                     </div>
     
-                                    <div class="cepNotesDiv">
+                                    <div class="cepNotesDiv" id="cepNoteID">
                                         <button id="cepNBtn">CEP NOTES</button>
                                     </div>
     
@@ -314,7 +333,7 @@
                                         </div>
                                         <div class="formFlex">
                                             <div class="inputContainer">
-                                                <input type="text" id="concernSearch2" class="formInput" placeholder="Concern">
+                                                <input type="text" id="concernSearch2" class="formInput" placeholder="Concern" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
                                                 <div id="concernDropdown2" class="dropdown-content hideCH">
                                                     <ul id="concernList2" class="dropdownList"></ul>
                                                 </div>
