@@ -12,10 +12,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const concernList = document.getElementById("concernList");
 
     const concerns = [
-        " ", "VD-No Voice and Data", "VD-Degraded Voice and Data",
-        "Data-No Internet Connection", "Data-Can't browse", 
-        "Data-Slow/Intermittent Connection", "Data-Can't Connect",
-        "Voice-No Dialtone", "Aftersales-Relocation", "Aftersales-Migration", "Aftersales-New Connect"
+        " ", "CANNOT BROWSE", "CANNOT MAKE_RECEIVE CALL",
+        "DEVICE PROBLEM", "LAN IP CONFIGURATION", 
+        "LOW BANDWIDTH", "NO DIALTONE",
+        "NO INTERNET DATA CONNECTION", "POOR CALL QUALITY", "ROUTER CONFIGURATION", "SELECTIVE BROWSING","SLOW_INTERMITTENT CONNECTION","SPECIAL FEATURE CONFIGURATION","VOICE AND DATA PROBLEM","WLAN CONFIGURATION","EMAIL PROBLEM WEBSITE IP LISTING","Not Applicable"
     ];
 
     function populateConcerns() {
@@ -61,10 +61,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const concernList = document.getElementById("concernList2");
 
     const concerns = [
-        " ", "VD-No Voice and Data", "VD-Degraded Voice and Data",
-        "Data-No Internet Connection", "Data-Can't browse", 
-        "Data-Slow/Intermittent Connection", "Data-Can't Connect",
-        "Voice-No Dialtone", "Aftersales-Relocation", "Aftersales-Migration", "Aftersales-New Connect"
+        " ", "CANNOT BROWSE", "CANNOT MAKE_RECEIVE CALL",
+        "DEVICE PROBLEM", "LAN IP CONFIGURATION", 
+        "LOW BANDWIDTH", "NO DIALTONE",
+        "NO INTERNET DATA CONNECTION", "POOR CALL QUALITY", "ROUTER CONFIGURATION", "SELECTIVE BROWSING","SLOW_INTERMITTENT CONNECTION","SPECIAL FEATURE CONFIGURATION","VOICE AND DATA PROBLEM","WLAN CONFIGURATION","EMAIL PROBLEM WEBSITE IP LISTING","Not Applicable"
     ];
 
     function populateConcerns() {
@@ -127,6 +127,8 @@ abcabtn.addEventListener("click",function(event){
     let ba = document.getElementById("baNum").value;
     let concern = document.getElementById("concernSearch").value;
     let action = document.getElementById("addRemarks").value;
+    let sID = document.getElementById("serviceID").value;
+    let wocas = document.getElementById("wocas").value;
    
     event.preventDefault();
 
@@ -135,7 +137,7 @@ abcabtn.addEventListener("click",function(event){
     dboxTitle.textContent = "ABCA";
 
     let abcatxtBox = document.getElementById("tbdTxtArea");
-    abcatxtBox.value = `Ani: ${ani}\nBilling Account Number:${ba}\nConcern: ${concern}\nAction: ${action}`;
+    abcatxtBox.value = `Ani  ${ani}\nBilling Account Number ${ba}\nService ID ${sID}\nConcern  ${concern}\nWocas ${wocas}\nAction  ${action}`;
 
     navigator.clipboard.writeText(abcatxtBox.value);
 
@@ -157,12 +159,16 @@ siBtn.addEventListener("click", function(event){
     dbox.classList.remove("okDis");
 
     let abcatxtBox = document.getElementById("tbdTxtArea");
-    abcatxtBox.value = `Contact Person: ${contactPerson}\nContact Number:${contactNumber}\nContact Email: ${contactEmail}Working Permit Needed:${wPermit}\nAvailable Date and Time:${avalableDateandTime}\n`;
+    abcatxtBox.value = `Contact Person  ${contactPerson}\nContact Number ${contactNumber}\nContact Email  ${contactEmail}\nWorking Permit Needed ${wPermit}\nAvailable Date and Time ${avalableDateandTime}\n`;
 
     navigator.clipboard.writeText(abcatxtBox.value);
 })
 
+
 cepNBtn.addEventListener("click", function(event){
+    let ispt = document.getElementById("istherePT");
+
+    let vc = document.getElementById("contactChannel").value;
     let sfdcCaseNum = document.getElementById("sfdcCaseNum").value;
     let contactPerson = document.getElementById("contactPerson").value;
     let contactNumber = document.getElementById("contactNumber").value;
@@ -176,6 +182,7 @@ cepNBtn.addEventListener("click", function(event){
     let onuLS = document.getElementById("onuLS").value;
     let flmTrb = document.getElementById("flmTrb").value;
     let pt = document.getElementById("pt").value;
+    let yespt = document.getElementById("istherePT").value;
     let addRemarks = document.getElementById("addRemarks").value;
     
 
@@ -185,10 +192,8 @@ cepNBtn.addEventListener("click", function(event){
 
     dboxTitle.textContent = "CEP NOTES";
 
-    dbox.classList.remove("okDis");
-
     let abcatxtBox = document.getElementById("tbdTxtArea");
-    abcatxtBox.value = `SFDC Case Number: ${sfdcCaseNum}\nContact Person: ${contactPerson}\nContact Number: ${contactNumber}\nContact Email Address: ${contactEmail}\nWorking Permit Needed: ${wPermit}\nAvailable Date and Time: ${avalableDateandTime}\nClearview Test Result: ${cvTestResult}\nComplaint Remarks/WOCAS: ${wocas}\nRequired Action: ${requiredAction}\nONU Serial Number: ${onuSN}\nONU Light Status: ${onuLS}\nFLM Troubleshooting: ${flmTrb}\nIs there a PT: ${pt}\nAdditional Remarks: ${addRemarks}\n`;
+    abcatxtBox.value = `Contact Channel Vendor ${vc}\nSFDC Case Number  ${sfdcCaseNum}\nContact Person  ${contactPerson}\nContact Number  ${contactNumber}\nContact Email Address  ${contactEmail}\nWorking Permit Needed  ${wPermit}\nAvailable Date and Time  ${avalableDateandTime}\nClearview Test Result  ${cvTestResult}\nComplaint Remarks/WOCAS  ${wocas}\nRequired Action  ${requiredAction}\nONU Serial Number  ${onuSN}\nONU Light Status  ${onuLS}\nFLM Troubleshooting  ${flmTrb}\nIs there a PT  ${pt}\nPT Number ${yespt}\nAdditional Remarks  ${addRemarks}\n`;
 
     navigator.clipboard.writeText(abcatxtBox.value);
 })
@@ -219,14 +224,12 @@ let contactChannel = document.getElementById("contactChannel");
 contactChannel.addEventListener("change",function(){
     let hotlineForm = document.getElementById("hotlineForm");
     let sanaAllForm = document.getElementById("sana-allForm");
-    console.log(contactChannel.value);
 
-    if(contactChannel.value == "Hotline"){
-
+    if(contactChannel.value == "Hotline CND"){
         hotlineForm.classList.remove("hideCH");
         sanaAllForm.classList.add("hideCH")
 
-    }else if(contactChannel.value == "Sana All"){
+    }else if(contactChannel.value == "Sana All CND"){
 
         sanaAllForm.classList.remove("hideCH");
         hotlineForm.classList.add("hideCH");
@@ -264,6 +267,45 @@ generatebtn.addEventListener("click",function(e){
     navigator.clipboard.writeText(abcatxtBox.value);
 
 })
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const hotlineForm = document.getElementById("hotlineForm"); // Target the hotline form
+    const submitButtons = hotlineForm.querySelectorAll("button:not([type='reset'])");
+    const resetButton = hotlineForm.querySelector("button[type='reset']");
+    const dbox = document.getElementById("dbox"); // Pop-up container
+
+    submitButtons.forEach(button => {
+        button.addEventListener("click", function (event) {
+            let isValid = true;
+
+            // Get all input, textarea, and select elements inside hotline form
+            const requiredFields = hotlineForm.querySelectorAll("input, textarea, select");
+
+            requiredFields.forEach(input => {
+                if (input.value.trim() === "") { 
+                    isValid = false;
+                }
+            });
+
+            if (!isValid) {
+                event.preventDefault(); 
+                alert("⚠ All fields must be filled before submitting."); // Clearer error message
+                dbox.classList.add("okDis"); // Hide pop-up if validation fails
+            } else {
+                event.preventDefault(); // Prevent actual form submission
+                dbox.classList.remove("okDis"); // Show pop-up if validation passes
+            }
+        });
+    });
+
+    resetButton.addEventListener("click", function () {
+        dbox.classList.add("okDis"); // Hide pop-up when reset
+    });
+});
+
+
+
 
 
 
