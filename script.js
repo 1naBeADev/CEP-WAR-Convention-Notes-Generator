@@ -62,54 +62,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// Search script 2
-
-document.addEventListener("DOMContentLoaded", function () {
-    const concernSearch = document.getElementById("concernSearch2");
-    const concernDropdown = document.getElementById("concernDropdown2");
-    const concernList = document.getElementById("concernList2");
-
-    const concerns = [
-        " ", "CANNOT BROWSE", "CANNOT MAKE_RECEIVE CALL",
-        "DEVICE PROBLEM", "LAN IP CONFIGURATION", 
-        "LOW BANDWIDTH", "NO DIALTONE",
-        "NO INTERNET DATA CONNECTION", "POOR CALL QUALITY", "ROUTER CONFIGURATION", "SELECTIVE BROWSING","SLOW_INTERMITTENT CONNECTION","SPECIAL FEATURE CONFIGURATION","VOICE AND DATA PROBLEM","WLAN CONFIGURATION","EMAIL PROBLEM WEBSITE IP LISTING","Not Applicable"
-    ];
-
-    function populateConcerns() {
-        concernList.innerHTML = "";
-        concerns.forEach(concern => {
-            const li = document.createElement("li");
-            li.textContent = concern;
-            li.addEventListener("click", () => {
-                concernSearch.value = concern;
-                concernDropdown.classList.add("hideCH");
-            });
-            concernList.appendChild(li);
-        });
-    }
-
-    function filterConcerns() {
-        const filter = concernSearch.value.toLowerCase();
-        const items = concernList.getElementsByTagName("li");
-        let hasMatch = false;
-
-        for (let item of items) {
-            if (item.textContent.toLowerCase().includes(filter)) {
-                item.style.display = "block";
-                hasMatch = true;
-            } else {
-                item.style.display = "none";
-            }
-        }
-
-        concernDropdown.classList.toggle("hideCH", !hasMatch);
-    }
-
-    concernSearch.addEventListener("input", filterConcerns);
-    populateConcerns();
-});
-
 
 // reset script
 document.addEventListener("DOMContentLoaded", function () {
@@ -479,6 +431,56 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+
+// SANA ALL CONCERN LIST
+
+document.addEventListener("DOMContentLoaded", function () {
+    const concernSearch = document.getElementById("concernSearchSA");
+    const concernDropdown = document.getElementById("concernDropdownSA");
+    const concernList = document.getElementById("concernListSA");
+
+    const concerns = [
+        " ", "CANNOT BROWSE", "CANNOT MAKE_RECEIVE CALL",
+        "DEVICE PROBLEM", "LAN IP CONFIGURATION", 
+        "LOW BANDWIDTH", "NO DIALTONE",
+        "NO INTERNET DATA CONNECTION", "POOR CALL QUALITY", "ROUTER CONFIGURATION", "SELECTIVE BROWSING","SLOW_INTERMITTENT CONNECTION","SPECIAL FEATURE CONFIGURATION","VOICE AND DATA PROBLEM","WLAN CONFIGURATION","EMAIL PROBLEM WEBSITE IP LISTING","Not Applicable"
+    ];
+
+    function populateConcerns() {
+        concernList.innerHTML = "";
+        concerns.forEach(concern => {
+            const li = document.createElement("li");
+            li.textContent = concern;
+            li.addEventListener("click", () => {
+                concernSearch.value = concern;
+                concernDropdown.classList.add("hideCH");
+            });
+            concernList.appendChild(li);
+        });
+    }
+
+    function filterConcerns() {
+        const filter = concernSearch.value.toLowerCase();
+        const items = concernList.getElementsByTagName("li");
+        let hasMatch = false;
+
+        for (let item of items) {
+            if (item.textContent.toLowerCase().includes(filter)) {
+                item.style.display = "block";
+                hasMatch = true;
+            } else {
+                item.style.display = "none";
+            }
+        }
+
+        concernDropdown.classList.toggle("hideCH", !hasMatch);
+    }
+
+    concernSearch.addEventListener("input", filterConcerns);
+    populateConcerns();
+});
+
 
 
 amBtn.addEventListener("click",function(event){
