@@ -37,6 +37,8 @@
                                         <option value="Hotline CND">Hotline - CND</option>
                                         <option value="Sana All CND">Sana All - CND</option>
                                         <option value="BOH AM">BOH - Account Management</option>
+                                        <option value="Email">Email</option>
+                                        <option value="Socmed">Social Media</option>
                                     </select>
                                 </div>
                             </div>
@@ -294,7 +296,7 @@
                                 <div class="formBody1">
                                     <div>
                                         <div class="formFlex">
-                                            <label for="ritm">RITM:</label>
+                                            <label for="ritm">RITM</label>
                                         </div>
                                         <div class="formFlex">
                                             <input type="text" id="ritm" name="ritm">
@@ -353,7 +355,7 @@
                                         </div>
                                         <div class="formFlex">
                                             <div class="inputContainer">
-                                                <input type="text" id="concernSearch" class="formInput" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                                                <input type="text" id="concernSearchSA" class="formInput" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
                                                 <div id="concernDropdown" class="dropdown-content hideCH">
                                                     <ul id="concernList" class="dropdownList"></ul>
                                                 </div>
@@ -366,10 +368,10 @@
                                 <div class="formBody2">
                                     <div>
                                         <div class="formFlex">
-                                            <label for="baNum">Billing Account Number</label>
+                                            <label for="baNumSA">Billing Account Number</label>
                                         </div>
                                         <div class="formFlex">
-                                            <input type="number" id="baNum" name="baNum">
+                                            <input type="number" id="baNumSA" name="baNumSA">
                                         </div>
                                     </div>
 
@@ -417,10 +419,10 @@
 
                                     <div>
                                         <div class="formFlex">
-                                            <label for="serviceID">Service ID:</label>
+                                            <label for="serviceIDSA">Service ID:</label>
                                         </div>
                                         <div class="formFlex">
-                                            <input type="text" id="serviceID" name="serviceID">
+                                            <input type="text" id="serviceIDSA" name="serviceIDSA">
                                         </div>
                                     </div>
 
@@ -659,7 +661,196 @@
     
 
                         </div>
- 
+
+                        <!-- EMAIL AND SOCMED SECTION -->
+
+                        <div id="emailForm" class="hideCH">
+
+                            <div class="mainform mainform1">
+                                
+                                <div class="formBody1">
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="anAM">EMAIL:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="anAM" name="anAM">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="concernSearch3" class="formLabel">Concern:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <div class="inputContainer">
+                                                <input type="text" id="concernSearch3" class="formInput" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                                                <div id="concernDropdown3" class="dropdown-content hideCH">
+                                                    <ul id="concernList3" class="dropdownList"></ul>
+                                                </div>
+                                            </div>
+                                        </div>                            
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="serviceID2">Service ID:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="serviceID2" name="serviceID2">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="formBody2">
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="baNum2">Billing Account Number</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="number" id="baNum2" name="baNum2">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="caNum2">Customer Account Number</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="number" id="caNum2" name="caNum2">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="textAreaDiv">
+                                <div class="ttdFlex1">
+                                    <label for="addRemarks2">Additional Remarks:</label>
+                                </div>
+                                <div class="ttdFlex2">
+                                    <textarea name="addRemarks2" id="addRemarks2"></textarea>
+                                </div>
+                            </div>
+
+
+                            <div class="btnDiv">
+                                <div class="btnInnerDiv">
+                                    <div >
+                                        <input type="reset" value="RESET">
+                                    </div>
+    
+                                    <div id="cepNoteID">
+                                        <button id="amBtn">GENERATE NOTATION</button>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+
+                            
+    
+
+                        </div>
+
+                        
+
+                        <div id="socmedForm" class="hideCH">
+
+                            <div class="mainform mainform1">
+                                
+                                <div class="formBody1">
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="anAM">SOCMED</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="anAM" name="anAM">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="concernSearch3" class="formLabel">Concern:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <div class="inputContainer">
+                                                <input type="text" id="concernSearch3" class="formInput" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                                                <div id="concernDropdown3" class="dropdown-content hideCH">
+                                                    <ul id="concernList3" class="dropdownList"></ul>
+                                                </div>
+                                            </div>
+                                        </div>                            
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="serviceID2">Service ID:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="serviceID2" name="serviceID2">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="formBody2">
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="baNum2">Billing Account Number</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="number" id="baNum2" name="baNum2">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="caNum2">Customer Account Number</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="number" id="caNum2" name="caNum2">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="textAreaDiv">
+                                <div class="ttdFlex1">
+                                    <label for="addRemarks2">Additional Remarks:</label>
+                                </div>
+                                <div class="ttdFlex2">
+                                    <textarea name="addRemarks2" id="addRemarks2"></textarea>
+                                </div>
+                            </div>
+
+
+                            <div class="btnDiv">
+                                <div class="btnInnerDiv">
+                                    <div >
+                                        <input type="reset" value="RESET">
+                                    </div>
+    
+                                    <div id="cepNoteID">
+                                        <button id="amBtn">GENERATE NOTATION</button>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+
+                            
+    
+
+                        </div>
                 </form> 
                 
             </div>
