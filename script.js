@@ -389,13 +389,13 @@ siBtnSA.addEventListener("click", function(event){
 sanBtn.addEventListener("click", function(event){
     let ritm = document.getElementById("ritm").value;
     let cepcn = document.getElementById("cepcn").value;
-    let sfdcCaseNum = document.getElementById("sfdcCaseNum").value;
+    let sfdcCaseNum = document.getElementById("sfdcCaseNum1").value;
     let ritmdate = document.getElementById("ritmdate").value;
     let caNum = document.getElementById("caNum").value;
     let baNum = document.getElementById("baNum").value;
     let aName = document.getElementById("aName").value;
-    let serviceID = document.getElementById("serviceID").value;
-    let concernSearch = document.getElementById("concernSearch").value;
+    let serviceID = document.getElementById("serviceID1").value;
+    let concernSearch = document.getElementById("concernSearch1").value;
     let addRemarksSA = document.getElementById("addRemarksSA").value;
 
     event.preventDefault();
