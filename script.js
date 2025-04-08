@@ -234,21 +234,44 @@ contactChannel.addEventListener("change",function(){
     let hotlineForm = document.getElementById("hotlineForm");
     let sanaAllForm = document.getElementById("sana-allForm");
     let bohAMForm = document.getElementById("amForm");
+    let email = document.getElementById("emailForm");
+    let socmed = document.getElementById("socmedForm");
 
     if(contactChannel.value == "Hotline CND"){
         hotlineForm.classList.remove("hideCH");
         bohAMForm.classList.add("hideCH");
         sanaAllForm.classList.add("hideCH")
+        email.classList.add("hideCH");
+        socmed.classList.add("hideCH");
 
     }else if(contactChannel.value == "Sana All CND"){
         sanaAllForm.classList.remove("hideCH");
         bohAMForm.classList.add("hideCH");
         hotlineForm.classList.add("hideCH");
+        email.classList.add("hideCH");
+        socmed.classList.add("hideCH");
 
     }else if(contactChannel.value == "BOH AM"){
         bohAMForm.classList.remove("hideCH");
         hotlineForm.classList.add("hideCH");
         sanaAllForm.classList.add("hideCH");
+        email.classList.add("hideCH");
+        socmed.classList.add("hideCH");
+
+    }else if(contactChannel.value == "Email"){
+        email.classList.remove("hideCH");
+        hotlineForm.classList.add("hideCH");
+        sanaAllForm.classList.add("hideCH");
+        bohAMForm.classList.add("hideCH");
+        socmed.classList.add("hideCH");
+        
+    }else if(contactChannel.value == "Socmed"){
+        socmed.classList.remove("hideCH");
+        hotlineForm.classList.add("hideCH");
+        sanaAllForm.classList.add("hideCH");
+        email.classList.add("hideCH");
+        bohAMForm.classList.add("hideCH");
+
     }
 })
 
@@ -307,12 +330,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // SANA ALL Buttons
 abcabtnSA.addEventListener("click",function(event){
-    let ani = document.getElementById("ani").value;
-    let ba = document.getElementById("baNum").value;
-    let concern = document.getElementById("concernSearch").value;
-    let action = document.getElementById("addRemarks").value;
-    let sID = document.getElementById("serviceID").value;
-    let wocas = document.getElementById("wocas").value;
+    let ani = document.getElementById("ritm").value;
+    let baNum = document.getElementById("baNumSA").value;
+    let concern = document.getElementById("concernSearchSA").value;
+    let action = document.getElementById("addRemarksSA").value;
+    let sID = document.getElementById("serviceIDSA").value;
    
     event.preventDefault();
 
@@ -321,7 +343,7 @@ abcabtnSA.addEventListener("click",function(event){
     dboxTitle.textContent = "ABCA";
 
     let abcatxtBox = document.getElementById("tbdTxtArea");
-    abcatxtBox.value = `Ani  ${ani}\nBilling Account Number ${ba}\nService ID ${sID}\nConcern  ${concern}\nWocas ${wocas}\nAction  ${action}`;
+    abcatxtBox.value = `RITM:  ${ani}\nBilling Account Number: ${baNum}\nService ID: ${sID}\nConcern:  ${concern}\nAction:  ${action}`;
 
     navigator.clipboard.writeText(abcatxtBox.value);
 
@@ -392,10 +414,10 @@ sanBtn.addEventListener("click", function(event){
     let sfdcCaseNum = document.getElementById("sfdcCaseNum1").value;
     let ritmdate = document.getElementById("ritmdate").value;
     let caNum = document.getElementById("caNum").value;
-    let baNum = document.getElementById("baNum").value;
+    let baNum = document.getElementById("baNumSA").value;
     let aName = document.getElementById("aName").value;
-    let serviceID = document.getElementById("serviceID1").value;
-    let concernSearch = document.getElementById("concernSearch1").value;
+    let serviceID = document.getElementById("serviceIDSA").value;
+    let concernSearch = document.getElementById("concernSearchSA").value;
     let addRemarksSA = document.getElementById("addRemarksSA").value;
 
     event.preventDefault();
