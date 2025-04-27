@@ -37,8 +37,8 @@
                                         <option value="Hotline CND">Hotline - CND</option>
                                         <option value="Sana All CND">Sana All - CND</option>
                                         <option value="BOH AM">BOH - Account Management</option>
-                                        <option value="Email">Email</option>
-                                        <option value="Socmed">Social Media</option>
+                                        <option value="Email - CND">Email - CND</option>
+                                        <option value="Socmed - CND">Social Media - CND</option>
                                     </select>
                                 </div>
                             </div>
@@ -192,6 +192,7 @@
                                                 <option value="Dispatched to Technician for Outside Checking">Dispatched to Technician for Outside Checking</option>
                                                 <option value="For IM Checking">For IM Checking</option>
                                                 <option value="FCR">FCR</option>
+                                                <option value="For Network Chcecking">For Network Chcecking</option>
                                             </select>
                                         </div>
                                     </div>
@@ -210,6 +211,7 @@
                                         </div>
                                     </div>
                                 </div>
+
 
                                 <div class="formBody2">
 
@@ -466,6 +468,7 @@
                                                 <option value="Dispatched to Technician for Outside Checking">Dispatched to Technician for Outside Checking</option>
                                                 <option value="For IM Checking">For IM Checking</option>
                                                 <option value="FCR">FCR</option>
+                                                <option value="For Network Chcecking">For Network Chcecking</option>
                                             </select>
                                         </div>
                                     </div>
@@ -843,6 +846,7 @@
                                                     <option value="Dispatched to Technician for Outside Checking">Dispatched to Technician for Outside Checking</option>
                                                     <option value="For IM Checking">For IM Checking</option>
                                                     <option value="FCR">FCR</option>
+                                                    <option value="For Network Chcecking">For Network Chcecking</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -860,7 +864,18 @@
                                                 </select>
                                             </div>
                                         </div>
+
+                                        <div>
+                                            <div class="formFlex">
+                                                <label for="pn_EM">Parent Number:</label>
+                                            </div>
+                                            <div class="formFlex">
+                                                <input type="text" id="pn_EM" name="pn_EM">
+                                            </div>
+                                        </div>
                                     </div>
+
+                                    
     
                                     <div class="formBody2">
     
@@ -906,7 +921,7 @@
     
                                 <div class="textAreaDiv">
                                     <div class="ttdFlex1">
-                                        <label for="addRemarks_EM">Additional Remarks:</label>
+                                        <label for="addRemarks_EM">Action Taken:</label>
                                     </div>
                                     <div class="ttdFlex2">
                                         <textarea name="addRemarks_EM" id="addRemarks_EM"></textarea>
@@ -981,11 +996,13 @@
 
                                     <div>
                                         <div class="formFlex">
-                                            <label for="fromsocialpersona_SM" class="extendedLabel" class="extendedLabel">From (Social Persona):</label>
+                                            <label for="fromsocialpersona_SM">From: (Social Persona) </label>
                                         </div>
                                         <div class="formFlex">
-                                            <input type="text" id="fromsocialpersona_SM" name="fromsocialpersona_SM">
-                                        </div>    
+                                            <select name="fromsocialpersona_SM" id="fromsocialpersona_SM">
+                                                <option value="Facebook" selected>Facebook</option>
+                                            </select>
+                                        </div>
                                     </div>
 
                                     <div>
@@ -1123,6 +1140,7 @@
                                                 <option value="Dispatched to Technician for Outside Checking">Dispatched to Technician for Outside Checking</option>
                                                 <option value="For IM Checking">For IM Checking</option>
                                                 <option value="FCR">FCR</option>
+                                                <option value="For Network Chcecking">For Network Chcecking</option>
                                             </select>
                                         </div>
                                     </div>
@@ -1138,6 +1156,15 @@
                                                 <option value="Yes">Yes</option>
                                                 <option value="No">No</option>
                                             </select>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="formFlex">
+                                            <label for="pn_SM">Parent Number:</label>
+                                        </div>
+                                        <div class="formFlex">
+                                            <input type="text" id="pn_SM" name="pn_SM">
                                         </div>
                                     </div>
                                 </div>
@@ -1186,7 +1213,7 @@
 
                             <div class="textAreaDiv">
                                 <div class="ttdFlex1">
-                                    <label for="addRemarks_SM">Additional Remarks:</label>
+                                    <label for="addRemarks_SM">Action Taken:</label>
                                 </div>
                                 <div class="ttdFlex2">
                                     <textarea name="addRemarks_SM" id="addRemarks_SM"></textarea>
@@ -1205,7 +1232,7 @@
                                     </div>
 
                                     <div class="standardNotesDiv" id="StandardNotesID">
-                                        <button id="sn_SM">Standard Notes</button>
+                                        <button id="sn_SM">STANDARD NOTES</button>
                                     </div>
    
                                     <div class="specialInsDiv">
