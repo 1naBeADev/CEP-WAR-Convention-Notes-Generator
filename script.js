@@ -215,14 +215,14 @@ contactChannel.addEventListener("change",function(){
         email.classList.add("hideCH");
         socmed.classList.add("hideCH");
 
-    }else if(contactChannel.value == "Email"){
+    }else if(contactChannel.value == "Email CND"){
         email.classList.remove("hideCH");
         hotlineForm.classList.add("hideCH");
         sanaAllForm.classList.add("hideCH");
         bohAMForm.classList.add("hideCH");
         socmed.classList.add("hideCH");
         
-    }else if(contactChannel.value == "Socmed"){
+    }else if(contactChannel.value == "Socmed CND"){
         socmed.classList.remove("hideCH");
         hotlineForm.classList.add("hideCH");
         sanaAllForm.classList.add("hideCH");
