@@ -572,6 +572,7 @@ cn_EM.addEventListener("click",function(event){
     let onuSN_EM = document.getElementById("onuSN_EM").value;
     let flmTrb_EM = document.getElementById("flmTrb_EM").value;
     let pn_EM = document.getElementById("pn_EM").value;
+    let wPermit_EM = document.getElementById("wPermit_EM").value;
    
     event.preventDefault();
 
@@ -580,7 +581,7 @@ cn_EM.addEventListener("click",function(event){
     dboxTitle.textContent = "CEP NOTES";
 
     let abcatxtBox = document.getElementById("tbdTxtArea");
-    abcatxtBox.value = `Contact channel Vendor:  ${vc}\nSFDC Case Number: ${sfdcCaseNum_EM}\nContact Person: ${contactperson_EM}\nContact Number:  ${contactNumber_EM}\nContact Email:  ${contactEmail_EM}\nAvailable Date and Time  ${avalableDateandTime_EM}\nSerial Number:  ${onuSN_EM}\nParent Number:  ${pn_EM}\nFLM Troubleshooting:  ${flmTrb_EM}\nClearview Test Result:  ${cvTestResult_EM}\nWOCAS:  ${wocas_EM}\nAction:  ${addRemarks_EM}`;
+    abcatxtBox.value = `Contact channel Vendor:  ${vc}\nSFDC Case Number: ${sfdcCaseNum_EM}\nContact Person: ${contactperson_EM}\nContact Number:  ${contactNumber_EM}\nContact Email:  ${contactEmail_EM}\nAvailable Date and Time  ${avalableDateandTime_EM}\nWorking Permit Needed: ${wPermit_EM}\nSerial Number:  ${onuSN_EM}\nParent Number:  ${pn_EM}\nFLM Troubleshooting:  ${flmTrb_EM}\nClearview Test Result:  ${cvTestResult_EM}\nWOCAS:  ${wocas_EM}\nAction:  ${addRemarks_EM}`;
 
     navigator.clipboard.writeText(abcatxtBox.value);
 
@@ -700,6 +701,8 @@ cn_SM.addEventListener("click",function(event){
     let onuSN_SM = document.getElementById("onuSN_SM").value;
     let flmTrb_SM = document.getElementById("flmTrb_SM").value;
     let pn_SM = document.getElementById("pn_SM").value;
+    let wPermit_SM = document.getElementById("wPermit_SM").value;
+
    
     event.preventDefault();
 
@@ -708,7 +711,7 @@ cn_SM.addEventListener("click",function(event){
     dboxTitle.textContent = "CEP NOTES";
 
     let abcatxtBox = document.getElementById("tbdTxtArea");
-    abcatxtBox.value = `Contact channel Vendor:  ${vc}\nSFDC Case Number: ${sfdctechnicalCasenum_SM}\nContact Person: ${contactperson_SM}\nContact Number:  ${contactNumber_SM}\nAvailable Date and Time  ${avalableDateandTime_SM}\nSerial Number:  ${onuSN_SM}\nParent Number:  ${pn_SM}\nFLM Troubleshooting:  ${flmTrb_SM}\nClearview Test Result:  ${cvTestResult_SM}\nWOCAS:  ${wocas_SM}\nAction:  ${addRemarks_SM}`;
+    abcatxtBox.value = `Contact channel Vendor:  ${vc}\nSFDC Case Number: ${sfdctechnicalCasenum_SM}\nContact Person: ${contactperson_SM}\nContact Number:  ${contactNumber_SM}\nAvailable Date and Time:  ${avalableDateandTime_SM}\nWorking Permit Needed: ${wPermit_SM}\nSerial Number:  ${onuSN_SM}\nParent Number:  ${pn_SM}\nFLM Troubleshooting:  ${flmTrb_SM}\nClearview Test Result:  ${cvTestResult_SM}\nWOCAS:  ${wocas_SM}\nAction:  ${addRemarks_SM}`;
 
     navigator.clipboard.writeText(abcatxtBox.value);
 
@@ -728,7 +731,7 @@ si_SM.addEventListener("click",function(event){
     dboxTitle.textContent = "SPECIAL INSTRUCTION";
 
     let abcatxtBox = document.getElementById("tbdTxtArea");
-    abcatxtBox.value = `Contact Person: ${contactperson_SM}\nContact Number:  ${contactNumber_SM}\nAvailable Date and Time  ${avalableDateandTime_SM}\nWorking Permit Needed: ${wPermit_SM}`;
+    abcatxtBox.value = `Contact Person: ${contactperson_SM}\nContact Number:  ${contactNumber_SM}\nAvailable Date and Time:  ${avalableDateandTime_SM}\nWorking Permit Needed: ${wPermit_SM}`;
 
     navigator.clipboard.writeText(abcatxtBox.value);
 
@@ -746,6 +749,9 @@ sn_SM.addEventListener("click",function(event){
     let addRemarks_SM = document.getElementById("addRemarks_SM").value;
     let rtsm = document.getElementById("rtsm").value;
     let fromsocialpersona_SM = document.getElementById("fromsocialpersona_SM").value;
+    let industrygroup_SM = document.getElementById("industrygroup_SM").value;
+    let Casenum_SM = document.getElementById("Casenum_SM").value;
+
 
    
     event.preventDefault();
@@ -755,7 +761,7 @@ sn_SM.addEventListener("click",function(event){
     dboxTitle.textContent = "STANDARD NOTES";
 
     let abcatxtBox = document.getElementById("tbdTxtArea");
-    abcatxtBox.value = `CEP Case No/Fault Ticket No: ${cepCasenum_SM}\nSFDC Case Number: ${sfdctechnicalCasenum_SM}\nReceived thru Enterprise SocMed Dated: ${rtsm}\nFrom (Social Persona): ${fromsocialpersona_SM}\nCustomer Account Number: ${customerAccountnum_SM}\nBilling Account Number:  ${baNum_SM}\nAccount Name: ${accountname_SM}\nService ID:  ${serviceID_SM}\nConcern:  ${concernSearch_SM}\nAction Taken: ${addRemarks_SM}`;
+    abcatxtBox.value = `Case Number: ${Casenum_SM}\nCEP Case No/Fault Ticket No: ${cepCasenum_SM}\nSFDC Case Number: ${sfdctechnicalCasenum_SM}\nReceived thru Enterprise SocMed Dated: ${rtsm}\nFrom (Social Persona): ${fromsocialpersona_SM}\nCustomer Account Number: ${customerAccountnum_SM}\nBilling Account Number:  ${baNum_SM}\nIndustry Group:  ${industrygroup_SM}\nAccount Name: ${accountname_SM}\nService ID:  ${serviceID_SM}\nConcern:  ${concernSearch_SM}\nAction Taken: ${addRemarks_SM}`;
 
     navigator.clipboard.writeText(abcatxtBox.value);
 
