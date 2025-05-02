@@ -15,7 +15,7 @@ input::-webkit-inner-spin-button {
 
 #mainContainer{
     width: 100%;
-    height: 175vh;
+    height: 180vh;
     background-color: #202020;
     flex-direction: column;
     overflow: hidden;
