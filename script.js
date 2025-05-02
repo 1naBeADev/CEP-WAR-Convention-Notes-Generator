@@ -595,6 +595,8 @@ si_EM.addEventListener("click",function(event){
     let contactEmail_EM = document.getElementById("contactEmail_EM").value;
     let avalableDateandTime_EM = document.getElementById("avalableDateandTime_EM").value;
     let wPermit_EM = document.getElementById("wPermit_EM").value;
+    let rcontactperson_EM = document.getElementById("rcontactperson_EM").value;
+    let rcontactNumber_EM = document.getElementById("rcontactNumber_EM").value;
    
     event.preventDefault();
 
@@ -603,7 +605,7 @@ si_EM.addEventListener("click",function(event){
     dboxTitle.textContent = "SPECIAL INSTRUCTION";
 
     let abcatxtBox = document.getElementById("tbdTxtArea");
-    abcatxtBox.value = `Contact Person: ${contactperson_EM}\nContact Number:  ${contactNumber_EM}\nContact Email:  ${contactEmail_EM}\nAvailable Date and Time  ${avalableDateandTime_EM}\nWorking Permit Needed: ${wPermit_EM}`;
+    abcatxtBox.value = `Contact Person: ${contactperson_EM}\nContact Number:  ${contactNumber_EM}\nContact Email:  ${contactEmail_EM}\nAvailable Date and Time  ${avalableDateandTime_EM}\nWorking Permit Needed: ${wPermit_EM}\nReported Contact Person:  ${rcontactperson_EM}\nReported Contact Number:  ${rcontactNumber_EM}`;
 
     navigator.clipboard.writeText(abcatxtBox.value);
 
@@ -621,6 +623,7 @@ sn_EM.addEventListener("click",function(event){
     let serviceID_EM = document.getElementById("serviceID_EM").value;
     let concernSearch_EM = document.getElementById("concernSearch_EM").value;
     let addRemarks_EM = document.getElementById("addRemarks_EM").value;
+    
 
    
     event.preventDefault();
@@ -723,6 +726,8 @@ si_SM.addEventListener("click",function(event){
     let contactNumber_SM = document.getElementById("contactNumber_SM").value;
     let avalableDateandTime_SM = document.getElementById("avalableDateandTime_SM").value;
     let wPermit_SM = document.getElementById("wPermit_SM").value;
+    let rcontactperson_EM = document.getElementById("rcontactperson_EM").value;
+    let rcontactNumber_EM = document.getElementById("rcontactNumber_EM").value;
    
     event.preventDefault();
 
@@ -731,7 +736,7 @@ si_SM.addEventListener("click",function(event){
     dboxTitle.textContent = "SPECIAL INSTRUCTION";
 
     let abcatxtBox = document.getElementById("tbdTxtArea");
-    abcatxtBox.value = `Contact Person: ${contactperson_SM}\nContact Number:  ${contactNumber_SM}\nAvailable Date and Time:  ${avalableDateandTime_SM}\nWorking Permit Needed: ${wPermit_SM}`;
+    abcatxtBox.value = `Contact Person: ${contactperson_SM}\nContact Number:  ${contactNumber_SM}\nAvailable Date and Time:  ${avalableDateandTime_SM}\nWorking Permit Needed: ${wPermit_SM}\nReported Contact Person:  ${rcontactperson_EM}\nReported Contact Number:  ${rcontactNumber_EM}`;
 
     navigator.clipboard.writeText(abcatxtBox.value);
 
