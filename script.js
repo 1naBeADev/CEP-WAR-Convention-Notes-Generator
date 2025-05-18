@@ -606,7 +606,7 @@ si_EM.addEventListener("click",function(event){
     dboxTitle.textContent = "SPECIAL INSTRUCTION";
 
     let abcatxtBox = document.getElementById("tbdTxtArea");
-    abcatxtBox.value = `Contact Person: ${contactperson_EM}\nContact Number:  ${contactNumber_EM}\nContact Email:  ${contactEmail_EM}\nAvailable Date and Time  ${avalableDateandTime_EM}\nWorking Permit Needed: ${wPermit_EM}\nReported Contact Person:  ${rcontactperson_EM}\nReported Contact Number:  ${rcontactNumber_EM}`;
+    abcatxtBox.value = `Contact Person ${contactperson_EM}\nContact Number  ${contactNumber_EM}\nContact Email  ${contactEmail_EM}\nAvailable Date and Time  ${avalableDateandTime_EM}\nWorking Permit Needed ${wPermit_EM}\nReported Contact Person  ${rcontactperson_EM}\nReported Contact Number  ${rcontactNumber_EM}`;
 
     navigator.clipboard.writeText(abcatxtBox.value);
 
@@ -738,7 +738,7 @@ si_SM.addEventListener("click",function(event){
     dboxTitle.textContent = "SPECIAL INSTRUCTION";
 
     let abcatxtBox = document.getElementById("tbdTxtArea");
-    abcatxtBox.value = `Contact Person: ${contactperson_SM}\nContact Number:  ${contactNumber_SM}\nAvailable Date and Time:  ${avalableDateandTime_SM}\nWorking Permit Needed: ${wPermit_SM}\nReported Contact Person:  ${rcontactperson_EM}\nReported Contact Number:  ${rcontactNumber_EM}`;
+    abcatxtBox.value = `Contact Person ${contactperson_SM}\nContact Number  ${contactNumber_SM}\nAvailable Date and Time  ${avalableDateandTime_SM}\nWorking Permit Needed ${wPermit_SM}\nReported Contact Person  ${rcontactperson_EM}\nReported Contact Number  ${rcontactNumber_EM}`;
 
     navigator.clipboard.writeText(abcatxtBox.value);
 
