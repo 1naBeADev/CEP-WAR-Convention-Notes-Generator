@@ -698,6 +698,7 @@ cn_SM.addEventListener("click",function(event){
     let sfdctechnicalCasenum_SM= document.getElementById("sfdctechnicalCasenum_SM").value;
     let contactperson_SM = document.getElementById("contactperson_SM").value;
     let contactNumber_SM = document.getElementById("contactNumber_SM").value;
+    let contactEm_SM = document.getElementById("contactEm_SM").value;
     let avalableDateandTime_SM = document.getElementById("avalableDateandTime_SM").value;
     let cvTestResult_SM = document.getElementById("cvTestResult_SM").value;
     let wocas_SM = document.getElementById("wocas_SM").value;
@@ -716,7 +717,7 @@ cn_SM.addEventListener("click",function(event){
     dboxTitle.textContent = "CEP NOTES";
 
     let abcatxtBox = document.getElementById("tbdTxtArea");
-    abcatxtBox.value = `Contact channel Vendor:  ${vc}\nSFDC Case Number: ${sfdctechnicalCasenum_SM}\nContact Person: ${contactperson_SM}\nContact Number:  ${contactNumber_SM}\nAvailable Date and Time:  ${avalableDateandTime_SM}\nWorking Permit Needed: ${wPermit_SM}\nSerial Number:  ${onuSN_SM}\nParent Number:  ${pn_SM}\nONU Light Status: ${onuLS_SM}\nFLM Troubleshooting:  ${flmTrb_SM}\nClearview Test Result:  ${cvTestResult_SM}\nWOCAS:  ${wocas_SM}\nAction:  ${addRemarks_SM}`;
+    abcatxtBox.value = `Contact channel Vendor:  ${vc}\nSFDC Case Number: ${sfdctechnicalCasenum_SM}\nContact Person: ${contactperson_SM}\nContact Number:  ${contactNumber_SM}\nContact Email:  ${contactEm_SM}\nAvailable Date and Time:  ${avalableDateandTime_SM}\nWorking Permit Needed: ${wPermit_SM}\nSerial Number:  ${onuSN_SM}\nParent Number:  ${pn_SM}\nONU Light Status: ${onuLS_SM}\nFLM Troubleshooting:  ${flmTrb_SM}\nClearview Test Result:  ${cvTestResult_SM}\nWOCAS:  ${wocas_SM}\nAction:  ${addRemarks_SM}`;
 
     navigator.clipboard.writeText(abcatxtBox.value);
 
